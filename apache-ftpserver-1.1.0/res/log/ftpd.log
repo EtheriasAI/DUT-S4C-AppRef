@@ -4099,3 +4099,8 @@ java.net.SocketException: Connection reset
 [ INFO] 2021-02-28 10:56:33,082 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
 
 [ INFO] 2021-02-28 10:56:33,083 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2021-02-28 11:06:45,816 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b: display name [org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b]; startup date [Sun Feb 28 11:06:45 CET 2021]; root of context hierarchy
+[ INFO] 2021-02-28 11:06:45,864 [] [] Loading XML bean definitions from file [C:\Users\juju\Music\AppRef\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2021-02-28 11:06:47,219 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b]: org.springframework.beans.factory.support.DefaultListableBeanFactory@22a637e7
+[ INFO] 2021-02-28 11:06:47,237 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@22a637e7: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2021-02-28 11:06:47,474 [] [] FTP server started
