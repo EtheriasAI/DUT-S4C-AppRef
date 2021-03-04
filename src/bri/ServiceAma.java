@@ -7,11 +7,11 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.*;
 
 
-class ServiceBRi implements Runnable {
+class ServiceAma implements Runnable {
 	
 	private Socket client;
 	
-	ServiceBRi(Socket socket) {
+	ServiceAma(Socket socket) {
 		client = socket;
 	}
 
