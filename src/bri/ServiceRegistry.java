@@ -8,6 +8,7 @@ import java.lang.reflect.Modifier;
 import java.util.List;
 import java.util.Vector;
 
+
 public class ServiceRegistry {
 	// cette classe est un registre de services
 	// partagée en concurrence par les clients et les "ajouteurs" de services,
@@ -43,8 +44,6 @@ public class ServiceRegistry {
 		if (c.getExceptionTypes().length != 0)
 			throw new ValidationException("Le constructeur (Socket) ne doit pas lever d'exception");
 		// etc... avec tous les tests nécessaires
-		
-	
 	}
 
 	public static Class<? extends Service> getServiceClass(int numService) {
@@ -71,15 +70,6 @@ public class ServiceRegistry {
 			}
 		}
 		return result;
-	}
-
-	@SuppressWarnings("deprecation")
-	public static void lance(int num) throws InstantiationException, IllegalAccessException {
-				
-		Class<? extends Runnable> a = servicesClasses.get(num);
-		Runnable b;
-		b = a.newInstance();
-		new Thread(b).start();
 	}
 
 }
