@@ -1,5 +1,4 @@
-package bri;
-
+package serveur;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -70,6 +69,13 @@ public class ServiceRegistry {
 			}
 		}
 		return result;
+	}
+
+	public static boolean doesExist(String numc) {
+		for(Class<? extends Service> s : servicesClasses)
+			if(numc.equals(s.getSimpleName()))
+				return true;
+		return false;
 	}
 
 }

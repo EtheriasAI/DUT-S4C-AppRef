@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import bri.Service;
+import serveur.Service;
 
 public class Salut implements Service {
 
@@ -19,9 +19,11 @@ public class Salut implements Service {
 	@Override
 	public void run() {
 			try {
+			BufferedReader in = new BufferedReader (new InputStreamReader(client.getInputStream ( )));
 			PrintWriter out = new PrintWriter (client.getOutputStream ( ), true);
 	
 			out.println("Salut");
+			in.readLine();
 		
 			client.close();
 		}
