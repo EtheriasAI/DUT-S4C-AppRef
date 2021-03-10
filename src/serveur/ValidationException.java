@@ -1,4 +1,4 @@
-package bri;
+package serveur;
 
 public class ValidationException extends Exception {
 
