@@ -1,8 +1,12 @@
 package appli;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-import bri.Serveur;
+import serveur.Serveur;
+import utilisateur.Programmeur;
+import utilisateur.Utilisateur;
 
 public class AppliServeur {
 	
@@ -17,6 +21,12 @@ public class AppliServeur {
 		}
 	}
 	
-	//public List<IUtilisateur> init pro()
+	public static List<Utilisateur> initPro(){
+		List<Utilisateur> prog = new ArrayList<Utilisateur>();
+		prog.add(new Programmeur("brette","brette","localhost:2020"));
+		prog.add(new Programmeur("stage","stage","localhost:2323"));
+		prog.add(new Programmeur("ecole","ecole","localhost:2222"));
+		return prog;
+	}
 	
 }

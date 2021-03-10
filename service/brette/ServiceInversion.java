@@ -2,7 +2,7 @@ package brette;
 import java.io.*;
 import java.net.*;
 
-import bri.Service;
+import serveur.Service;
 
 
 public class ServiceInversion implements Service {
@@ -28,9 +28,7 @@ public class ServiceInversion implements Service {
 			
 			client.close();
 		}
-		catch (IOException e) {
-			//Fin du service d'inversion
-		}
+		catch (IOException e) {}
 	}
 	
 	protected void finalize() throws Throwable {

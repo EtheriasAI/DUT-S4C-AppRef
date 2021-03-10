@@ -4184,3 +4184,45 @@ java.net.SocketException: Connection reset
 [ INFO] 2021-03-04 16:08:33,015 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b]: org.springframework.beans.factory.support.DefaultListableBeanFactory@4b5d6a01
 [ INFO] 2021-03-04 16:08:33,035 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4b5d6a01: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
 [ INFO] 2021-03-04 16:08:33,382 [] [] FTP server started
+[ INFO] 2021-03-04 22:52:28,210 [] [127.0.0.1] CREATED
+[ INFO] 2021-03-04 22:52:28,269 [] [127.0.0.1] OPENED
+[ INFO] 2021-03-04 22:52:28,308 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2021-03-04 22:52:28,315 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2021-03-04 22:52:28,325 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2021-03-04 22:52:28,326 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2021-03-04 22:52:28,358 [anonymous] [127.0.0.1] Anonymous login success - Java13.0.2@
+[ INFO] 2021-03-04 22:52:28,359 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2021-03-04 22:52:28,360 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2021-03-04 22:52:28,365 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2021-03-04 22:52:28,381 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2021-03-04 22:52:28,401 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||54427|)
+
+[ INFO] 2021-03-04 22:52:28,402 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2021-03-04 22:52:28,404 [anonymous] [127.0.0.1] Releasing unreserved passive port: 54427
+[ INFO] 2021-03-04 22:52:28,407 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||54428|)
+
+[ INFO] 2021-03-04 22:52:28,410 [anonymous] [127.0.0.1] RECEIVED: RETR 0.class
+[ WARN] 2021-03-04 22:52:28,425 [anonymous] [127.0.0.1] Releasing unreserved passive port: 54428
+[ INFO] 2021-03-04 22:52:28,426 [anonymous] [127.0.0.1] SENT: 550 /0.class: No such file or directory.
+
+[ INFO] 2021-03-04 22:52:28,430 [anonymous] [127.0.0.1] RECEIVED: CWD 0.class
+[ INFO] 2021-03-04 22:52:28,436 [anonymous] [127.0.0.1] SENT: 550 No such directory.
+
+[ INFO] 2021-03-04 22:52:28,437 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2021-03-04 22:52:28,441 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2021-03-04 22:52:28,442 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2021-03-07 15:17:32,825 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b: display name [org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b]; startup date [Sun Mar 07 15:17:32 CET 2021]; root of context hierarchy
+[ INFO] 2021-03-07 15:17:32,870 [] [] Loading XML bean definitions from file [C:\Users\juju\Music\AppRef\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2021-03-07 15:17:33,778 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b]: org.springframework.beans.factory.support.DefaultListableBeanFactory@22a637e7
+[ INFO] 2021-03-07 15:17:33,791 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@22a637e7: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2021-03-07 15:17:33,972 [] [] FTP server started
+[ INFO] 2021-03-10 09:32:14,295 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b: display name [org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b]; startup date [Wed Mar 10 09:32:14 CET 2021]; root of context hierarchy
+[ INFO] 2021-03-10 09:32:14,343 [] [] Loading XML bean definitions from file [C:\Users\juju\Music\AppRef\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2021-03-10 09:32:15,996 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@7c75222b]: org.springframework.beans.factory.support.DefaultListableBeanFactory@769f71a9
+[ INFO] 2021-03-10 09:32:16,045 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@769f71a9: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2021-03-10 09:32:16,350 [] [] FTP server started
