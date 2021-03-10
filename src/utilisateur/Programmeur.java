@@ -4,12 +4,12 @@ public class Programmeur implements Utilisateur {
 
 	private String login;
 	private String mdp;
-	private String url;
+	private boolean p;
 	
-	public Programmeur(String login, String mdp, String URL){
+	public Programmeur(String login, String mdp, boolean p){
 		this.login=login;
 		this.mdp=mdp;
-		url=URL;
+		this.p=p;
 	}
 	
 	@Override
@@ -20,16 +20,6 @@ public class Programmeur implements Utilisateur {
 	@Override
 	public String getMDP() {
 		return mdp;
-	}
-
-	@Override
-	public String getURL() {
-		return url;
-	}
-
-	@Override
-	public void setURL(String URL) {
-		this.url=URL;
 	}
 
 }

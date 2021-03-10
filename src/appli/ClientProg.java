@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class ClientProg {
+public class clientprog {
 
 	public static int PORT_PROG = 1000;
 	public static String HOST ="localhost";
@@ -21,14 +21,11 @@ public class ClientProg {
 		BufferedReader sin = new BufferedReader (new InputStreamReader(socket.getInputStream ( )));
 		PrintWriter sout = new PrintWriter (socket.getOutputStream ( ), true);
 		Scanner clavier = new Scanner(System.in);
-		String val="init";
-		while (true){
-			val=sin.readLine();
-			if(val==null) 
-				break;
-			System.out.println(val);
+		
+		while (!socket.isClosed()){
+			System.out.println(sin.readLine());
 			sout.println(clavier.next());
-			
+			System.out.println("prog");
 			}
 		socket.close();
 		clavier.close();

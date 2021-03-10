@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class ClientAma {
+public class clientama {
 	
 	public static int PORT_AMA = 3000;
 	private static String HOST="localhost";
@@ -21,18 +21,13 @@ public class ClientAma {
 		PrintWriter sout = new PrintWriter (socket.getOutputStream ( ), true);
 		BufferedReader clavierClient = new BufferedReader(new InputStreamReader(System.in));	
 		
-		String val="init";
-		while(true) {	
-			val=sin.readLine();
-			if(val==null) 
-				break;
-			System.out.println(val);
+		while(!socket.isClosed()) {					
+			System.out.println(sin.readLine());
 			String message = clavierClient.readLine();
 			sout.println(message);
-			
 		}
 		socket.close();
-		clavierClient.close();
+		
 	}
 	
 }
