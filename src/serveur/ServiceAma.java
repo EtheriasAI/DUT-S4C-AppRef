@@ -1,5 +1,14 @@
 package serveur;
 
+/**
+ * Service des amateurs
+ * 
+ * @author GATIMEL CHARLES
+ * @author BARTHELME JUSTINE
+ * 
+ * @version 1.0
+ * 
+ */
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -26,8 +35,6 @@ class ServiceAma implements Runnable {
 				Constructor<? extends Service> niou = classe.getConstructor(java.net.Socket.class);
 				Service service = niou.newInstance(this.client);
 				service.run();
-				/*Method runne = classe.getMethod("run");
-				runne.invoke(service);*/
 			} catch (SecurityException | InstantiationException | IllegalAccessException
 					| IllegalArgumentException | InvocationTargetException | NoSuchMethodException e) {
 				System.out.println(e);

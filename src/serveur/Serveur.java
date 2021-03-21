@@ -18,6 +18,9 @@ public class Serveur implements Runnable {
 	// qui va la traiter.
 	public void run() {
 		try {
+			/*Si c'est 3000 c'est pour les amateurs
+			 * Sinon c'est un programeur
+			 */
 			while(true) {
 				if(listen_socket.getLocalPort()==3000)
 					new ServiceAma(listen_socket.accept()).start();

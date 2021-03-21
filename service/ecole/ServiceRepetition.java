@@ -1,5 +1,15 @@
 package ecole;
 
+/**
+ * Service de repetition du message
+ * 
+ * @author GATIMEL CHARLES
+ * @author BARTHELME JUSTINE
+ * 
+ * @version 1.0
+ * 
+ */
+
 import java.io.*;
 import java.net.*;
 
